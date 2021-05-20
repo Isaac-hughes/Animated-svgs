@@ -142,3 +142,71 @@
     opacity: 1;
   }
 }
+
+
+#qrcode{
+  animation: qrCodeAnimate 5s linear infinite;
+}
+
+#box1{
+  animation: box1Animate 5s linear infinite;
+}
+
+#box2{
+  animation: box2Animate 5s linear infinite;
+}
+
+@keyframes qrCodeAnimate {
+  0%{
+    transform: translateX(-100%);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-0%);
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-0%);
+    opacity: 0;
+  }
+}
+@keyframes box1Animate {
+  0%{
+    transform: translateX(-100%);
+  }
+  10%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(-0%);
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-0%);
+    opacity: 0;
+  }
+}
+@keyframes box2Animate {
+  0%{
+    transform: translateX(100%);
+  }
+  20%{
+    transform: translateX(100%);
+  }
+  60%{
+    transform: translateX(0%);
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
